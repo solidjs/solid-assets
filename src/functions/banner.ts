@@ -21,10 +21,10 @@ export async function handleRequest(request: Request): Promise<Response> {
   });
   typeText.fill = "#fff";
 
-  const projectWidth = bold?.getAdvanceWidth(project, 14, {
+  const projectWidth = bold?.getAdvanceWidth(project, 10, {
     letterSpacing: 0.05,
   });
-  const projectText = bold?.getPath(project, 500 - projectWidth - 24, 90, 14, {
+  const projectText = bold?.getPath(project, 500 - projectWidth - 24, 90, 10, {
     letterSpacing: 0.05,
   });
   projectText.fill = "#fff";
