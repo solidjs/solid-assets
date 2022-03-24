@@ -16,8 +16,6 @@ export async function handleRequest(request: Request): Promise<Response> {
 
   const isCore = type.toLowerCase() === "core";
 
-  console.log(isCore, type, background, project);
-
   const typeText = regular?.getPath(type, 105, 67, 14, {
     letterSpacing: 0.05,
   });
