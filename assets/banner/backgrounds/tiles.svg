@@ -1,0 +1,991 @@
+<svg x="0" y="0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 100">
+  <defs>
+    <path id="reuse-0" fill="url(#g)" d="M0 23.464 42.033 0l42.034 22.6v8.69L42.033 54.75 0 31.286Z" />
+    <path id="reuse-1" fill="url(#h)" d="M0 23.464 42.033 0v8.69L0 32.155Z" />
+    <path id="reuse-2" fill="url(#i)" d="M0 14.774 42.033 0 0 23.464Z" />
+    <path id="reuse-3" fill="url(#j)" d="M-6.967 22.6-49 0v7.821l42.033 23.465Z" />
+    <path id="reuse-4" fill="url(#j)" d="M-6.967 14.774-49 0l42.033 23.464Z" />
+    <path id="reuse-5" fill="url(#g)" d="M0 18 32.461 0l32.462 17.333V24L32.461 42 0 24Z" />
+    <path id="reuse-6" fill="url(#h)" d="M0 18 32.461 0v6.667L0 24.667Z" />
+    <path id="reuse-7" fill="url(#i)" d="M0 11.333 32.461 0 0 18Z" />
+    <path id="reuse-8" fill="url(#j)" d="M-16.539 17.333-49 0v6l32.461 18Z" />
+    <path id="reuse-9" fill="url(#j)" d="M-16.539 11.333-49 0l32.461 18Z" />
+  </defs>
+  <defs>
+    <filter id="c" width="168.948" height="115.048" x="183" y="-78.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur" operator="in" />
+    </filter>
+    <filter id="d" width="97.46" height="58.06" x="231.33" y="-60.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-2" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-2" operator="in" />
+    </filter>
+    <filter id="e" width="168.948" height="115.048" x="314" y="-58.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-3" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-3" operator="in" />
+    </filter>
+    <filter id="f" width="97.46" height="58.06" x="362.33" y="-40.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-4" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-4" operator="in" />
+    </filter>
+    <filter id="k" width="168.948" height="115.048" x="183" y="-38.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-5" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-5" operator="in" />
+    </filter>
+    <filter id="l" width="97.46" height="58.06" x="231.33" y="-20.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-6" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-6" operator="in" />
+    </filter>
+    <filter id="m" width="168.948" height="115.048" x="-78" y="-33.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-7" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-7" operator="in" />
+    </filter>
+    <filter id="n" width="97.46" height="58.06" x="-29.67" y="-15.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-8" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-8" operator="in" />
+    </filter>
+    <filter id="o" width="168.948" height="115.048" x="269" y="-34.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-9" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-9" operator="in" />
+    </filter>
+    <filter id="p" width="97.46" height="58.06" x="317.33" y="-16.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-10" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-10" operator="in" />
+    </filter>
+    <filter id="q" width="168.948" height="115.048" x="140" y="-10.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-11" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-11" operator="in" />
+    </filter>
+    <filter id="r" width="97.46" height="58.06" x="188.33" y="7.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-12" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-12" operator="in" />
+    </filter>
+    <filter id="s" width="168.948" height="115.048" x="-34" y="-10.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-13" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-13" operator="in" />
+    </filter>
+    <filter id="t" width="97.46" height="58.06" x="14.33" y="7.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-14" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-14" operator="in" />
+    </filter>
+    <filter id="u" width="168.948" height="115.048" x="227" y="-10.357" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-15" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-15" operator="in" />
+    </filter>
+    <filter id="v" width="97.46" height="58.06" x="275.33" y="7.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-16" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-16" operator="in" />
+    </filter>
+    <filter id="w" width="168.948" height="115.048" x="184" y="14.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-17" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-17" operator="in" />
+    </filter>
+    <filter id="x" width="97.46" height="58.06" x="232.33" y="32.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-18" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-18" operator="in" />
+    </filter>
+    <filter id="y" width="168.948" height="115.048" x="9" y="14.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-19" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-19" operator="in" />
+    </filter>
+    <filter id="z" width="97.46" height="58.06" x="57.33" y="32.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-20" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-20" operator="in" />
+    </filter>
+    <filter id="A" width="168.948" height="115.048" x="-78" y="15.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-21" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-21" operator="in" />
+    </filter>
+    <filter id="B" width="97.46" height="58.06" x="-29.67" y="33.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-22" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-22" operator="in" />
+    </filter>
+    <filter id="C" width="168.948" height="115.048" x="271" y="14.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-23" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-23" operator="in" />
+    </filter>
+    <filter id="D" width="97.46" height="58.06" x="319.33" y="32.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-24" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-24" operator="in" />
+    </filter>
+    <filter id="E" width="168.948" height="115.048" x="97" y="14.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-25" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-25" operator="in" />
+    </filter>
+    <filter id="F" width="97.46" height="58.06" x="145.33" y="32.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-26" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-26" operator="in" />
+    </filter>
+    <filter id="G" width="168.948" height="115.048" x="-120" y="38.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-27" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-27" operator="in" />
+    </filter>
+    <filter id="H" width="97.46" height="58.06" x="-71.67" y="56.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-28" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-28" operator="in" />
+    </filter>
+    <filter id="I" width="168.948" height="115.048" x="227" y="38.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-29" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-29" operator="in" />
+    </filter>
+    <filter id="J" width="97.46" height="58.06" x="275.33" y="56.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-30" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-30" operator="in" />
+    </filter>
+    <filter id="K" width="168.948" height="115.048" x="53" y="38.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-31" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-31" operator="in" />
+    </filter>
+    <filter id="L" width="97.46" height="58.06" x="101.33" y="56.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-32" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-32" operator="in" />
+    </filter>
+    <filter id="M" width="168.948" height="115.048" x="-33" y="38.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-33" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-33" operator="in" />
+    </filter>
+    <filter id="N" width="97.46" height="58.06" x="15.33" y="56.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-34" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-34" operator="in" />
+    </filter>
+    <filter id="O" width="168.948" height="115.048" x="316" y="38.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-35" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-35" operator="in" />
+    </filter>
+    <filter id="P" width="97.46" height="58.06" x="364.33" y="56.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-36" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-36" operator="in" />
+    </filter>
+    <filter id="Q" width="168.948" height="115.048" x="140" y="38.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-37" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-37" operator="in" />
+    </filter>
+    <filter id="R" width="97.46" height="58.06" x="188.33" y="56.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-38" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-38" operator="in" />
+    </filter>
+    <filter id="S" width="168.948" height="115.048" x="9" y="62.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-39" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-39" operator="in" />
+    </filter>
+    <filter id="T" width="97.46" height="58.06" x="57.33" y="80.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-40" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-40" operator="in" />
+    </filter>
+    <filter id="U" width="168.948" height="115.048" x="272" y="60.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-41" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-41" operator="in" />
+    </filter>
+    <filter id="V" width="97.46" height="58.06" x="320.33" y="78.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-42" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-42" operator="in" />
+    </filter>
+    <filter id="W" width="168.948" height="115.048" x="-78" y="62.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-43" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-43" operator="in" />
+    </filter>
+    <filter id="X" width="97.46" height="58.06" x="-29.67" y="80.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-44" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-44" operator="in" />
+    </filter>
+    <filter id="Y" width="168.948" height="115.048" x="185" y="62.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-45" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-45" operator="in" />
+    </filter>
+    <filter id="Z" width="97.46" height="58.06" x="233.33" y="80.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-46" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-46" operator="in" />
+    </filter>
+    <filter id="aa" width="168.948" height="115.048" x="97" y="62.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-47" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-47" operator="in" />
+    </filter>
+    <filter id="ab" width="97.46" height="58.06" x="145.33" y="80.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-48" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-48" operator="in" />
+    </filter>
+    <filter id="ac" width="168.948" height="115.048" x="53" y="86.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-49" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-49" operator="in" />
+    </filter>
+    <filter id="ad" width="97.46" height="58.06" x="101.33" y="104.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-50" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-50" operator="in" />
+    </filter>
+    <filter id="ae" width="168.948" height="115.048" x="-33" y="86.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-51" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-51" operator="in" />
+    </filter>
+    <filter id="af" width="97.46" height="58.06" x="15.33" y="104.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-52" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-52" operator="in" />
+    </filter>
+    <filter id="ag" width="168.948" height="115.048" x="142" y="86.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-53" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-53" operator="in" />
+    </filter>
+    <filter id="ah" width="97.46" height="58.06" x="190.33" y="104.643" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-54" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-54" operator="in" />
+    </filter>
+    <filter id="ai" width="142.772" height="99.434" x="8" y="109" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-55" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-55" operator="in" />
+    </filter>
+    <filter id="aj" width="79.366" height="47.333" x="53.52" y="127" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-56" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-56" operator="in" />
+    </filter>
+    <filter id="ak" width="142.772" height="99.434" x="78" y="107" filterUnits="userSpaceOnUse">
+      <feOffset dx="-30" dy="4" />
+      <feGaussianBlur result="blur-57" stdDeviation="8" />
+      <feFlood flood-color="#89aac6" flood-opacity=".824" />
+      <feComposite in2="blur-57" operator="in" />
+    </filter>
+    <filter id="al" width="79.366" height="47.333" x="123.52" y="125" filterUnits="userSpaceOnUse">
+      <feOffset dx="-12" dy="4" />
+      <feGaussianBlur result="blur-58" stdDeviation="2" />
+      <feFlood flood-color="#2c617c" flood-opacity=".835" />
+      <feComposite in2="blur-58" operator="in" />
+    </filter>
+    <linearGradient id="g" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d0deea" />
+      <stop offset="1" stop-color="#dae1e8" />
+    </linearGradient>
+    <linearGradient id="h" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bdc2c8" />
+      <stop offset="1" stop-color="#dcedef" />
+    </linearGradient>
+    <linearGradient id="i" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#adbbca" stop-opacity=".702" />
+      <stop offset="1" stop-color="#e4e8e9" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="j" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7692ae" />
+      <stop offset="1" stop-color="#93b0ce" />
+    </linearGradient>
+    <radialGradient id="b" cx="-.061" cy="-.082" r="1.895" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#002c69" />
+      <stop offset=".748" stop-color="#20569a" />
+      <stop offset="1" stop-color="#28abd8" />
+    </radialGradient>
+    <clipPath id="a">
+      <path d="M0 0h500v100H0z" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)">
+    <path fill="url(#b)" d="M0 0h502v150H0z" />
+    <g style="mix-blend-mode:color-burn;isolation:isolate">
+      <g>
+        <g opacity=".14">
+          <g filter="url(#c)" transform="translate(0 .003)">
+            <path fill="#fff" d="m291.36-58.36 60.588 34.762-54.36 32.286L237-27.039Z" />
+          </g>
+          <g filter="url(#d)" transform="translate(0 .003)">
+            <path fill="#fff" d="m287.615-58.36 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#e)" transform="translate(0 .003)">
+            <path fill="#fff" d="m422.36-38.36 60.588 34.762-54.36 32.286L368-7.039Z" />
+          </g>
+          <g filter="url(#f)" transform="translate(0 .003)">
+            <path fill="#fff" d="m418.615-38.36 41.175 22.6L422.363 7.7 380.33-15.76Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M370.033-30.536 412.066-54 454.1-31.4v8.69L412.066.75l-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(370.033 -54)" />
+            <use xlink:href="#reuse-1" transform="translate(412.066 -31.405)" />
+            <use xlink:href="#reuse-1" transform="translate(412.066 -31.405)" />
+            <use xlink:href="#reuse-2" transform="translate(412.066 -22.714)" />
+            <use xlink:href="#reuse-3" transform="translate(419.033 -30.536)" />
+            <use xlink:href="#reuse-4" transform="translate(419.033 -22.714)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#k)" transform="translate(0 .003)">
+            <path fill="#fff" d="m291.36-18.36 60.588 34.762-54.36 32.286L237 12.961Z" />
+          </g>
+          <g filter="url(#l)" transform="translate(0 .003)">
+            <path fill="#fff" d="m287.615-18.36 41.175 22.6-37.427 23.46L249.33 4.24Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M239.033-10.536 281.066-34 323.1-11.4v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(239.033 -34)" />
+            <use xlink:href="#reuse-1" transform="translate(281.066 -11.405)" />
+            <use xlink:href="#reuse-1" transform="translate(281.066 -11.405)" />
+            <use xlink:href="#reuse-2" transform="translate(281.066 -2.714)" />
+            <use xlink:href="#reuse-3" transform="translate(288.033 -10.536)" />
+            <use xlink:href="#reuse-4" transform="translate(288.033 -2.714)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#m)" transform="translate(0 .003)">
+            <path fill="#fff" d="m30.36-13.36 60.588 34.762-54.36 32.286L-24 17.961Z" />
+          </g>
+          <g filter="url(#n)" transform="translate(0 .003)">
+            <path fill="#fff" d="M26.615-13.36 67.79 9.24 30.363 32.7-11.67 9.24Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M-21.967-5.536 20.066-29 62.1-6.4v8.69L20.066 25.75-21.967 2.286Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(-21.967 -29)" />
+            <use xlink:href="#reuse-1" transform="translate(20.066 -6.405)" />
+            <use xlink:href="#reuse-1" transform="translate(20.066 -6.405)" />
+            <use xlink:href="#reuse-2" transform="translate(20.066 2.286)" />
+            <use xlink:href="#reuse-3" transform="translate(27.033 -5.536)" />
+            <use xlink:href="#reuse-4" transform="translate(27.033 2.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#o)" transform="translate(0 .003)">
+            <path fill="#fff" d="m377.36-14.36 60.588 34.762-54.36 32.286L323 16.961Z" />
+          </g>
+          <g filter="url(#p)" transform="translate(0 .003)">
+            <path fill="#fff" d="m373.615-14.36 41.175 22.6-37.427 23.46L335.33 8.24Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M325.033-6.536 367.066-30 409.1-7.4v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(325.033 -30)" />
+            <use xlink:href="#reuse-1" transform="translate(367.066 -7.405)" />
+            <use xlink:href="#reuse-1" transform="translate(367.066 -7.405)" />
+            <use xlink:href="#reuse-2" transform="translate(367.066 1.286)" />
+            <use xlink:href="#reuse-3" transform="translate(374.033 -6.536)" />
+            <use xlink:href="#reuse-4" transform="translate(374.033 1.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#q)" transform="translate(0 .003)">
+            <path fill="#fff" d="m248.36 9.64 60.588 34.762-54.36 32.286L194 40.961Z" />
+          </g>
+          <g filter="url(#r)" transform="translate(0 .003)">
+            <path fill="#fff" d="m244.615 9.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M196.033 17.464 238.066-6 280.1 16.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(196.033 -6)" />
+            <use xlink:href="#reuse-1" transform="translate(238.066 16.595)" />
+            <use xlink:href="#reuse-1" transform="translate(238.066 16.595)" />
+            <use xlink:href="#reuse-2" transform="translate(238.066 25.286)" />
+            <use xlink:href="#reuse-3" transform="translate(245.033 17.464)" />
+            <use xlink:href="#reuse-4" transform="translate(245.033 25.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#s)" transform="translate(0 .003)">
+            <path fill="#fff" d="m74.36 9.64 60.588 34.762-54.36 32.286L20 40.961Z" />
+          </g>
+          <g filter="url(#t)" transform="translate(0 .003)">
+            <path fill="#fff" d="m70.615 9.64 41.175 22.6L74.363 55.7 32.33 32.24Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M22.033 17.464 64.066-6 106.1 16.6v8.69L64.066 48.75 22.033 25.286Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(22.033 -6)" />
+            <use xlink:href="#reuse-1" transform="translate(64.066 16.595)" />
+            <use xlink:href="#reuse-1" transform="translate(64.066 16.595)" />
+            <use xlink:href="#reuse-2" transform="translate(64.066 25.286)" />
+            <use xlink:href="#reuse-3" transform="translate(71.033 17.464)" />
+            <use xlink:href="#reuse-4" transform="translate(71.033 25.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#u)" transform="translate(0 .003)">
+            <path fill="#fff" d="m335.36 9.64 60.588 34.762-54.36 32.286L281 40.961Z" />
+          </g>
+          <g filter="url(#v)" transform="translate(0 .003)">
+            <path fill="#fff" d="m331.615 9.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M283.033 17.464 325.066-6 367.1 16.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(283.033 -6)" />
+            <use xlink:href="#reuse-1" transform="translate(325.066 16.595)" />
+            <use xlink:href="#reuse-1" transform="translate(325.066 16.595)" />
+            <use xlink:href="#reuse-2" transform="translate(325.066 25.286)" />
+            <use xlink:href="#reuse-3" transform="translate(332.033 17.464)" />
+            <use xlink:href="#reuse-4" transform="translate(332.033 25.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#w)" transform="translate(0 .003)">
+            <path fill="#fff" d="m292.36 34.64 60.588 34.762-54.36 32.286L238 65.961Z" />
+          </g>
+          <g filter="url(#x)" transform="translate(0 .003)">
+            <path fill="#fff" d="m288.615 34.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M240.033 42.464 282.066 19 324.1 41.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(240.033 19)" />
+            <use xlink:href="#reuse-1" transform="translate(282.066 41.595)" />
+            <use xlink:href="#reuse-1" transform="translate(282.066 41.595)" />
+            <use xlink:href="#reuse-2" transform="translate(282.066 50.286)" />
+            <use xlink:href="#reuse-3" transform="translate(289.033 42.464)" />
+            <use xlink:href="#reuse-4" transform="translate(289.033 50.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#y)" transform="translate(0 .003)">
+            <path fill="#fff" d="m117.36 34.64 60.588 34.762-54.36 32.286L63 65.961Z" />
+          </g>
+          <g filter="url(#z)" transform="translate(0 .003)">
+            <path fill="#fff" d="m113.615 34.64 41.175 22.6-37.427 23.46L75.33 57.24Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M65.033 42.464 107.066 19 149.1 41.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(65.033 19)" />
+            <use xlink:href="#reuse-1" transform="translate(107.066 41.595)" />
+            <use xlink:href="#reuse-1" transform="translate(107.066 41.595)" />
+            <use xlink:href="#reuse-2" transform="translate(107.066 50.286)" />
+            <use xlink:href="#reuse-3" transform="translate(114.033 42.464)" />
+            <use xlink:href="#reuse-4" transform="translate(114.033 50.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#A)" transform="translate(0 .003)">
+            <path fill="#fff" d="m30.36 35.64 60.588 34.762-54.36 32.286L-24 66.961Z" />
+          </g>
+          <g filter="url(#B)" transform="translate(0 .003)">
+            <path fill="#fff" d="m26.615 35.64 41.175 22.6L30.363 81.7-11.67 58.24Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M-21.967 43.464 20.066 20 62.1 42.6v8.69L20.066 74.75l-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(-21.967 20)" />
+            <use xlink:href="#reuse-1" transform="translate(20.066 42.595)" />
+            <use xlink:href="#reuse-1" transform="translate(20.066 42.595)" />
+            <use xlink:href="#reuse-2" transform="translate(20.066 51.286)" />
+            <use xlink:href="#reuse-3" transform="translate(27.033 43.464)" />
+            <use xlink:href="#reuse-4" transform="translate(27.033 51.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#C)" transform="translate(0 .003)">
+            <path fill="#fff" d="m379.36 34.64 60.588 34.762-54.36 32.286L325 65.961Z" />
+          </g>
+          <g filter="url(#D)" transform="translate(0 .003)">
+            <path fill="#fff" d="m375.615 34.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M327.033 42.464 369.066 19 411.1 41.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(327.033 19)" />
+            <use xlink:href="#reuse-1" transform="translate(369.066 41.595)" />
+            <use xlink:href="#reuse-1" transform="translate(369.066 41.595)" />
+            <use xlink:href="#reuse-2" transform="translate(369.066 50.286)" />
+            <use xlink:href="#reuse-3" transform="translate(376.033 42.464)" />
+            <use xlink:href="#reuse-4" transform="translate(376.033 50.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#E)" transform="translate(0 .003)">
+            <path fill="#fff" d="m205.36 34.64 60.588 34.762-54.36 32.286L151 65.961Z" />
+          </g>
+          <g filter="url(#F)" transform="translate(0 .003)">
+            <path fill="#fff" d="m201.615 34.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M153.033 42.464 195.066 19 237.1 41.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(153.033 19)" />
+            <use xlink:href="#reuse-1" transform="translate(195.066 41.595)" />
+            <use xlink:href="#reuse-1" transform="translate(195.066 41.595)" />
+            <use xlink:href="#reuse-2" transform="translate(195.066 50.286)" />
+            <use xlink:href="#reuse-3" transform="translate(202.033 42.464)" />
+            <use xlink:href="#reuse-4" transform="translate(202.033 50.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#G)" transform="translate(0 .003)">
+            <path fill="#fff" d="m-11.64 58.64 60.588 34.762-54.36 32.286L-66 89.961Z" />
+          </g>
+          <g filter="url(#H)" transform="translate(0 .003)">
+            <path fill="#fff" d="m-15.385 58.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M-63.967 66.464-21.934 43 20.1 65.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(-63.967 43)" />
+            <use xlink:href="#reuse-1" transform="translate(-21.934 65.595)" />
+            <use xlink:href="#reuse-1" transform="translate(-21.934 65.595)" />
+            <use xlink:href="#reuse-2" transform="translate(-21.934 74.286)" />
+            <use xlink:href="#reuse-3" transform="translate(-14.967 66.464)" />
+            <use xlink:href="#reuse-4" transform="translate(-14.967 74.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#I)" transform="translate(0 .003)">
+            <path fill="#fff" d="m335.36 58.64 60.588 34.762-54.36 32.286L281 89.961Z" />
+          </g>
+          <g filter="url(#J)" transform="translate(0 .003)">
+            <path fill="#fff" d="m331.615 58.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M283.033 66.464 325.066 43 367.1 65.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(283.033 43)" />
+            <use xlink:href="#reuse-1" transform="translate(325.066 65.595)" />
+            <use xlink:href="#reuse-1" transform="translate(325.066 65.595)" />
+            <use xlink:href="#reuse-2" transform="translate(325.066 74.286)" />
+            <use xlink:href="#reuse-3" transform="translate(332.033 66.464)" />
+            <use xlink:href="#reuse-4" transform="translate(332.033 74.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#K)" transform="translate(0 .003)">
+            <path fill="#fff" d="m161.36 58.64 60.588 34.762-54.36 32.286L107 89.961Z" />
+          </g>
+          <g filter="url(#L)" transform="translate(0 .003)">
+            <path fill="#fff" d="m157.615 58.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M109.033 66.464 151.066 43 193.1 65.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(109.033 43)" />
+            <use xlink:href="#reuse-1" transform="translate(151.066 65.595)" />
+            <use xlink:href="#reuse-1" transform="translate(151.066 65.595)" />
+            <use xlink:href="#reuse-2" transform="translate(151.066 74.286)" />
+            <use xlink:href="#reuse-3" transform="translate(158.033 66.464)" />
+            <use xlink:href="#reuse-4" transform="translate(158.033 74.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#M)" transform="translate(0 .003)">
+            <path fill="#fff" d="m75.36 58.64 60.588 34.762-54.36 32.286L21 89.961Z" />
+          </g>
+          <g filter="url(#N)" transform="translate(0 .003)">
+            <path fill="#fff" d="m71.615 58.64 41.175 22.6-37.427 23.46L33.33 81.24Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M23.033 66.464 65.066 43 107.1 65.6v8.69L65.066 97.75 23.033 74.286Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(23.033 43)" />
+            <use xlink:href="#reuse-1" transform="translate(65.066 65.595)" />
+            <use xlink:href="#reuse-1" transform="translate(65.066 65.595)" />
+            <use xlink:href="#reuse-2" transform="translate(65.066 74.286)" />
+            <use xlink:href="#reuse-3" transform="translate(72.033 66.464)" />
+            <use xlink:href="#reuse-4" transform="translate(72.033 74.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#O)" transform="translate(0 .003)">
+            <path fill="#fff" d="m424.36 58.64 60.588 34.762-54.36 32.286L370 89.961Z" />
+          </g>
+          <g filter="url(#P)" transform="translate(0 .003)">
+            <path fill="#fff" d="m420.615 58.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M372.033 66.464 414.066 43 456.1 65.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(372.033 43)" />
+            <use xlink:href="#reuse-1" transform="translate(414.066 65.595)" />
+            <use xlink:href="#reuse-1" transform="translate(414.066 65.595)" />
+            <use xlink:href="#reuse-2" transform="translate(414.066 74.286)" />
+            <use xlink:href="#reuse-3" transform="translate(421.033 66.464)" />
+            <use xlink:href="#reuse-4" transform="translate(421.033 74.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#Q)" transform="translate(0 .003)">
+            <path fill="#fff" d="m248.36 58.64 60.588 34.762-54.36 32.286L194 89.961Z" />
+          </g>
+          <g filter="url(#R)" transform="translate(0 .003)">
+            <path fill="#fff" d="m244.615 58.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M196.033 66.464 238.066 43 280.1 65.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(196.033 43)" />
+            <use xlink:href="#reuse-1" transform="translate(238.066 65.595)" />
+            <use xlink:href="#reuse-1" transform="translate(238.066 65.595)" />
+            <use xlink:href="#reuse-2" transform="translate(238.066 74.286)" />
+            <use xlink:href="#reuse-3" transform="translate(245.033 66.464)" />
+            <use xlink:href="#reuse-4" transform="translate(245.033 74.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#S)" transform="translate(0 .003)">
+            <path fill="#fff" d="m117.36 82.64 60.588 34.762-54.36 32.286L63 113.961Z" />
+          </g>
+          <g filter="url(#T)" transform="translate(0 .003)">
+            <path fill="#fff" d="m113.615 82.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M65.033 90.464 107.066 67 149.1 89.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(65.033 67)" />
+            <use xlink:href="#reuse-1" transform="translate(107.066 89.595)" />
+            <use xlink:href="#reuse-1" transform="translate(107.066 89.595)" />
+            <use xlink:href="#reuse-2" transform="translate(107.066 98.286)" />
+            <use xlink:href="#reuse-3" transform="translate(114.033 90.464)" />
+            <use xlink:href="#reuse-4" transform="translate(114.033 98.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#U)" transform="translate(0 .003)">
+            <path fill="#fff" d="m380.36 80.64 60.588 34.762-54.36 32.286L326 111.961Z" />
+          </g>
+          <g filter="url(#V)" transform="translate(0 .003)">
+            <path fill="#fff" d="m376.615 80.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M328.033 88.464 370.066 65 412.1 87.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(328.033 65)" />
+            <use xlink:href="#reuse-1" transform="translate(370.066 87.595)" />
+            <use xlink:href="#reuse-1" transform="translate(370.066 87.595)" />
+            <use xlink:href="#reuse-2" transform="translate(370.066 96.286)" />
+            <use xlink:href="#reuse-3" transform="translate(377.033 88.464)" />
+            <use xlink:href="#reuse-4" transform="translate(377.033 96.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#W)" transform="translate(0 .003)">
+            <path fill="#fff" d="m30.36 82.64 60.588 34.762-54.36 32.286L-24 113.961Z" />
+          </g>
+          <g filter="url(#X)" transform="translate(0 .003)">
+            <path fill="#fff" d="m26.615 82.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M-21.967 90.464 20.066 67 62.1 89.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(-21.967 67)" />
+            <use xlink:href="#reuse-1" transform="translate(20.066 89.595)" />
+            <use xlink:href="#reuse-1" transform="translate(20.066 89.595)" />
+            <use xlink:href="#reuse-2" transform="translate(20.066 98.286)" />
+            <use xlink:href="#reuse-3" transform="translate(27.033 90.464)" />
+            <use xlink:href="#reuse-4" transform="translate(27.033 98.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#Y)" transform="translate(0 .003)">
+            <path fill="#fff" d="m293.36 82.64 60.588 34.762-54.36 32.286L239 113.961Z" />
+          </g>
+          <g filter="url(#Z)" transform="translate(0 .003)">
+            <path fill="#fff" d="m289.615 82.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M241.033 90.464 283.066 67 325.1 89.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(241.033 67)" />
+            <use xlink:href="#reuse-1" transform="translate(283.066 89.595)" />
+            <use xlink:href="#reuse-1" transform="translate(283.066 89.595)" />
+            <use xlink:href="#reuse-2" transform="translate(283.066 98.286)" />
+            <use xlink:href="#reuse-3" transform="translate(290.033 90.464)" />
+            <use xlink:href="#reuse-4" transform="translate(290.033 98.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#aa)" transform="translate(0 .003)">
+            <path fill="#fff" d="m205.36 82.64 60.588 34.762-54.36 32.286L151 113.961Z" />
+          </g>
+          <g filter="url(#ab)" transform="translate(0 .003)">
+            <path fill="#fff" d="m201.615 82.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M153.033 90.464 195.066 67 237.1 89.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(153.033 67)" />
+            <use xlink:href="#reuse-1" transform="translate(195.066 89.595)" />
+            <use xlink:href="#reuse-1" transform="translate(195.066 89.595)" />
+            <use xlink:href="#reuse-2" transform="translate(195.066 98.286)" />
+            <use xlink:href="#reuse-3" transform="translate(202.033 90.464)" />
+            <use xlink:href="#reuse-4" transform="translate(202.033 98.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#ac)" transform="translate(0 .003)">
+            <path fill="#fff" d="m161.36 106.64 60.588 34.762-54.36 32.286L107 137.961Z" />
+          </g>
+          <g filter="url(#ad)" transform="translate(0 .003)">
+            <path fill="#fff" d="m157.615 106.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M109.033 114.464 151.066 91l42.034 22.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(109.033 91)" />
+            <use xlink:href="#reuse-1" transform="translate(151.066 113.595)" />
+            <use xlink:href="#reuse-1" transform="translate(151.066 113.595)" />
+            <use xlink:href="#reuse-2" transform="translate(151.066 122.286)" />
+            <use xlink:href="#reuse-3" transform="translate(158.033 114.464)" />
+            <use xlink:href="#reuse-4" transform="translate(158.033 122.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#ae)" transform="translate(0 .003)">
+            <path fill="#fff" d="m75.36 106.64 60.588 34.762-54.36 32.286L21 137.961Z" />
+          </g>
+          <g filter="url(#af)" transform="translate(0 .003)">
+            <path fill="#fff" d="m71.615 106.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M23.033 114.464 65.066 91l42.034 22.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(23.033 91)" />
+            <use xlink:href="#reuse-1" transform="translate(65.066 113.595)" />
+            <use xlink:href="#reuse-1" transform="translate(65.066 113.595)" />
+            <use xlink:href="#reuse-2" transform="translate(65.066 122.286)" />
+            <use xlink:href="#reuse-3" transform="translate(72.033 114.464)" />
+            <use xlink:href="#reuse-4" transform="translate(72.033 122.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#ag)" transform="translate(0 .003)">
+            <path fill="#fff" d="m250.36 106.64 60.588 34.762-54.36 32.286L196 137.961Z" />
+          </g>
+          <g filter="url(#ah)" transform="translate(0 .003)">
+            <path fill="#fff" d="m246.615 106.64 41.175 22.6-37.427 23.46-42.033-23.46Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="M198.033 114.464 240.066 91l42.034 22.6v8.69l-42.034 23.46-42.033-23.464Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-0" transform="translate(198.033 91)" />
+            <use xlink:href="#reuse-1" transform="translate(240.066 113.595)" />
+            <use xlink:href="#reuse-1" transform="translate(240.066 113.595)" />
+            <use xlink:href="#reuse-2" transform="translate(240.066 122.286)" />
+            <use xlink:href="#reuse-3" transform="translate(247.033 114.464)" />
+            <use xlink:href="#reuse-4" transform="translate(247.033 122.286)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#ai)">
+            <path fill="#fff" d="m103.981 129 46.791 26.667-41.981 24.767L62 153.027Z" />
+          </g>
+          <g filter="url(#aj)">
+            <path fill="#fff" d="m101.086 129 31.8 17.333-28.9 18-32.466-18Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="m63.57 135 32.461-18 32.462 17.333V141l-32.462 18-32.461-18Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-5" transform="translate(63.57 117)" />
+            <use xlink:href="#reuse-6" transform="translate(96.031 134.333)" />
+            <use xlink:href="#reuse-6" transform="translate(96.031 134.333)" />
+            <use xlink:href="#reuse-7" transform="translate(96.031 141)" />
+            <use xlink:href="#reuse-8" transform="translate(112.57 135)" />
+            <use xlink:href="#reuse-9" transform="translate(112.57 141)" />
+          </g>
+        </g>
+      </g>
+      <g>
+        <g opacity=".14">
+          <g filter="url(#ak)">
+            <path fill="#fff" d="m173.981 127 46.791 26.667-41.981 24.767L132 151.027Z" />
+          </g>
+          <g filter="url(#al)">
+            <path fill="#fff" d="m171.086 127 31.8 17.333-28.9 18-32.466-18Z" />
+          </g>
+        </g>
+        <g>
+          <path fill="#fff" d="m133.57 133 32.461-18 32.462 17.333V139l-32.462 18-32.461-18Z" />
+          <g opacity=".24">
+            <use xlink:href="#reuse-5" transform="translate(133.57 115)" />
+            <use xlink:href="#reuse-6" transform="translate(166.031 132.333)" />
+            <use xlink:href="#reuse-6" transform="translate(166.031 132.333)" />
+            <use xlink:href="#reuse-7" transform="translate(166.031 139)" />
+            <use xlink:href="#reuse-8" transform="translate(182.57 133)" />
+            <use xlink:href="#reuse-9" transform="translate(182.57 139)" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
