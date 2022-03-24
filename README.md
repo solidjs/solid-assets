@@ -10,11 +10,11 @@ This is the home of the new assets api for Solid. This will provide the communit
 
 To get a banner for a project, use the following url:
 
-```https://solid-assets.ch99q.workers.dev/banner?&project=<project-name>```
+```https://solid-assets.ch99q.workers.dev/banner?project=<project-name>```
 
 If you want another type of background, you can choose between `tiles` and `blocks`.
 
-```https://solid-assets.ch99q.workers.dev/banner?&project=<project-name>&background=[tiles|blocks]```
+```https://solid-assets.ch99q.workers.dev/banner?project=<project-name>&background=[tiles|blocks]```
 
 ## Development
 
