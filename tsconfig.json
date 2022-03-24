@@ -5,6 +5,7 @@
     "module": "ESNext",
     "lib": ["ESNext"],
     "moduleResolution": "Node",
+    "skipLibCheck": true,
     "strict": true,
     "sourceMap": true,
     "resolveJsonModule": true,
@@ -14,8 +15,10 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "types": [
+      "vite/client",
       "@cloudflare/workers-types"
     ]
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

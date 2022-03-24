@@ -5,14 +5,24 @@
   "main": "dist/worker.js",
   "scripts": {
     "dev": "vpc dev src/worker.ts",
-    "build": "tsc && vpc build src/worker.ts dist/worker.js",
-    "deploy": "wrangler publish"
+    "build": "tsc && vpc build -m src/worker.ts dist/worker.js",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "deploy": "vitest run && wrangler publish",
+    "scripts:generate-fonts": "vite-node scripts/generate-fonts.js"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.4.0",
+    "@types/opentype.js": "^1.3.3",
     "miniflare": "^2.3.0",
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
-    "vite-plugin-cloudflare": "^0.1.0"
+    "vite-node": "^0.7.10",
+    "vite-plugin-cloudflare": "^0.1.0",
+    "vite-raw-plugin": "^1.0.1",
+    "vitest": "^0.7.10"
+  },
+  "dependencies": {
+    "opentype.js": "^1.3.4"
   }
 }
