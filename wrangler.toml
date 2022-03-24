@@ -1,0 +1,9 @@
+name = "solid-assets"
+type = "javascript"
+workers_dev = true
+compatibility_date = "2022-03-23"
+
+[build]
+command = "yarn install && yarn build"
+[build.upload]
+format = "service-worker"

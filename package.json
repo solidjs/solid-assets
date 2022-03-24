@@ -1,0 +1,18 @@
+{
+  "name": "solid-assets",
+  "private": true,
+  "version": "0.0.0",
+  "main": "dist/worker.js",
+  "scripts": {
+    "dev": "vpc dev src/worker.ts",
+    "build": "tsc && vpc build src/worker.ts dist/worker.js",
+    "deploy": "wrangler publish"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.4.0",
+    "miniflare": "^2.3.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vite-plugin-cloudflare": "^0.1.0"
+  }
+}
