@@ -1,8 +1,14 @@
 {
   "name": "solid-assets",
-  "private": true,
-  "version": "0.0.0",
+  "description": "Assets for the SolidJS community",
+  "version": "0.1.0",
+  "license": "MIT",
   "main": "dist/worker.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ch99q/solid-assets"
+  },
+  "private": true,
   "scripts": {
     "dev": "vpc dev src/worker.ts",
     "build": "tsc && vpc build -m src/worker.ts dist/worker.js",
@@ -24,5 +30,8 @@
   },
   "dependencies": {
     "opentype.js": "^1.3.4"
+  },
+  "engines": {
+    "node": ">=16.7"
   }
 }
