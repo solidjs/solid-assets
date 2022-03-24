@@ -80,6 +80,7 @@ export async function handleRequest(request: Request): Promise<Response> {
   return new Response(svg, {
     headers: {
       "Content-Type": "image/svg+xml",
+      "Cache-Control": "public, max-age=" + 60 * 60 * 24 * 31, /* 31 days */
     },
   });
 }
