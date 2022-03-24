@@ -1,5 +1,5 @@
 <p>
-  <img width="100%" src="https://solid-assets.ch99q.workers.dev/banner?type=core&project=assets" alt="Solid Assets">
+  <img width="100%" src="https://solid-assets.ch99q.workers.dev/banner?project=assets" alt="Solid Assets">
 </p>
 
 # Solid Assets
