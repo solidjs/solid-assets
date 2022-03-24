@@ -6,6 +6,16 @@
 
 This is the home of the new assets api for Solid. This will provide the community and offical repositoryies with banners and logos for all kinds of projects.
 
+## Usage
+
+To get a banner for a project, use the following url:
+
+```https://solid-assets.ch99q.workers.dev/banner?&project=<project-name>```
+
+If you want another type of background, you can choose between `tiles` and `blocks`.
+
+```https://solid-assets.ch99q.workers.dev/banner?&project=<project-name>&background=[tiles|blocks]```
+
 ## Development
 
 The repository uses `pnpm` as the package manager. To install `pnpm`, run the following command in your terminal.
