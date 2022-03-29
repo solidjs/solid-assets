@@ -1,5 +1,5 @@
 <p>
-  <img width="100%" src="https://solid-assets.ch99q.workers.dev/banner?project=assets" alt="Solid Assets">
+  <img width="100%" src="https://assets.solidjs.com/banner?project=assets" alt="Solid Assets">
 </p>
 
 # Solid Assets
@@ -10,11 +10,11 @@ This is the home of the new assets api for Solid. This will provide the communit
 
 To get a banner for a project, use the following url:
 
-```https://solid-assets.ch99q.workers.dev/banner?project=<project-name>```
+```https://assets.solidjs.com/banner?project=<project-name>```
 
 If you want another type of background, you can choose between `tiles` and `blocks`.
 
-```https://solid-assets.ch99q.workers.dev/banner?project=<project-name>&background=[tiles|blocks]```
+```https://assets.solidjs.com/banner?project=<project-name>&background=[tiles|blocks]```
 
 ## Development
 

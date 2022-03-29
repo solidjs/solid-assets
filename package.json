@@ -1,12 +1,12 @@
 {
   "name": "solid-assets",
-  "description": "Assets for the SolidJS community",
+  "description": "Official assets for the SolidJS community",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/worker.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ch99q/solid-assets"
+    "url": "https://github.com/solidjs/solid-assets"
   },
   "private": true,
   "scripts": {
