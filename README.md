@@ -4,7 +4,7 @@
 
 # Solid Assets
 
-This is the home of the new assets api for Solid. This will provide the community and offical repositoryies with banners and logos for all kinds of projects.
+Access official community assets for SolidJS through our simple asserts API; This provides the community with dynamic and static resources to get started with libraries and projects related to the SolidJS community.
 
 ## Usage
 
