@@ -1,19 +1,26 @@
 import * as banner from "./functions/banner";
 
 async function cacheRequest(
-  request: Request,
+  event: FetchEvent,
   handle: (request: Request) => Promise<Response>
 ): Promise<Response> {
-  const cache = (await (caches as any).default) as Cache;
-  const cached = await cache.match(request.url);
+  const request = event.request;
+  const url = new URL(request.url);
 
-  if (cached) {
-    cached.headers.set("X-Worker-Cache", "true");
-    return cached;
+  const cacheKey = new Request(url.toString(), request);
+  const cache = (caches as any).default as Cache;
+
+  let response = await cache.match(cacheKey);
+
+  if (!response) {
+    response = await handle(request);
+
+    response = new Response(response.body, response);
+
+    response.headers.append('Cache-Control', 's-maxage=2678400'); // 31 days cache.
+  
+    event.waitUntil(cache.put(cacheKey, response.clone()));
   }
-
-  const response = await handle(request);
-  await cache.put(request.url, response.clone());
 
   return response;
 }
@@ -53,5 +60,5 @@ async function handleRequest(request: Request): Promise<Response> {
 }
 
 addEventListener("fetch", (event: FetchEvent) => {
-  event.respondWith(cacheRequest(event.request, handleRequest));
+  event.respondWith(cacheRequest(event, handleRequest));
 });
