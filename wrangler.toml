@@ -1,7 +1,4 @@
 name = "solid-assets"
-type = "javascript"
+main = "dist/worker.js"
 workers_dev = true
 compatibility_date = "2026-04-21"
-
-[build.upload]
-format = "service-worker"
