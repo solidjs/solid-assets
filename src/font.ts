@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import GorditaRegular from "../assets/fonts/Gordita/Gordita-Regular.json";
-import GorditaBold from "../assets/fonts/Gordita/Gordita-Bold.json";
+import GorditaRegular from "../assets/fonts/gordita/Gordita-Regular.json";
+import GorditaBold from "../assets/fonts/gordita/Gordita-Bold.json";
 
 import { Font, Glyph, Path } from "opentype.js";
 
