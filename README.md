@@ -1,5 +1,5 @@
 <p>
-  <img width="100%" src="https://assets.solidjs.com/banner?project=assets" alt="Solid Assets">
+  <img width="100%" src="https://assets.solidjs.com/banner?project=assets&v=20260824" alt="Solid Assets">
 </p>
 
 # Solid Assets
@@ -33,7 +33,7 @@ Choose between `tiles` and `blocks`:
 ```https://assets.solidjs.com/banner?project=<project-name>&type=[Core|Community|Ecosystem|...]```
 
 <p>
-  <img width="100%" src="https://assets.solidjs.com/banner?project=solid-start&type=Core" alt="Core banner, no caption">
+  <img width="100%" src="https://assets.solidjs.com/banner?project=solid-start&type=Core&v=20260824" alt="Core banner, no caption">
 </p>
 
 `Core` drops the caption entirely and shows just the SolidJS wordmark — anything else is rendered as free-text underneath it (`Community`, `Ecosystem`, or your own label).
@@ -45,7 +45,7 @@ Retint the banner to match your project's own branding by passing a hex color (w
 ```https://assets.solidjs.com/banner?project=<project-name>&color=<hex-color>```
 
 <p>
-  <img width="100%" src="https://assets.solidjs.com/banner?project=solid-select&type=Ecosystem&background=tiles&color=F97316" alt="Banner tinted orange for solid-select">
+  <img width="100%" src="https://assets.solidjs.com/banner?project=solid-select&type=Ecosystem&background=tiles&color=F97316&v=20260824" alt="Banner tinted orange for solid-select">
 </p>
 
 The background, box, and SolidJS logo retint together; the caption and project tag text stay white regardless of color.
@@ -57,7 +57,7 @@ Show another project's logo alongside the SolidJS logo — useful for libraries 
 ```https://assets.solidjs.com/banner?project=<project-name>&integration=<url-encoded SVG URL>```
 
 <p>
-  <img width="100%" src="https://assets.solidjs.com/banner?project=github&background=tiles&integration=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fsimple-icons%4011%2Ficons%2Fgithub.svg" alt="SolidJS x GitHub banner">
+  <img width="100%" src="https://assets.solidjs.com/banner?project=github&background=tiles&integration=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fsimple-icons%4011%2Ficons%2Fgithub.svg&v=20260824" alt="SolidJS x GitHub banner">
 </p>
 
 A few things to know:
