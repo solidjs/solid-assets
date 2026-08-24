@@ -25,3 +25,25 @@
 ## Community project with blocks background
 ![Community with blocks background](https://assets.solidjs.com/banner?project=motion&background=blocks)
 *Generated from url: `https://assets.solidjs.com/banner?project=motion&background=blocks`*
+
+# Color options
+## Retinted with a custom color
+![Retinted orange](https://assets.solidjs.com/banner?project=solid-select&type=Ecosystem&background=tiles&color=F97316)
+*Generated from url: `https://assets.solidjs.com/banner?project=solid-select&type=Ecosystem&background=tiles&color=F97316`*
+## Another color, another background
+![Retinted green](https://assets.solidjs.com/banner?project=solid-select&type=Ecosystem&background=blocks&color=16A34A)
+*Generated from url: `https://assets.solidjs.com/banner?project=solid-select&type=Ecosystem&background=blocks&color=16A34A`*
+## Invalid or omitted colors fall back to the default blue
+![Default blue fallback](https://assets.solidjs.com/banner?project=solid-select&type=Ecosystem&background=tiles)
+*Generated from url: `https://assets.solidjs.com/banner?project=solid-select&type=Ecosystem&background=tiles`*
+
+# Integration graphics
+## SolidJS logo alongside an integration's logo
+![SolidJS x GitHub](https://assets.solidjs.com/banner?project=github&background=tiles&integration=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fsimple-icons%4011%2Ficons%2Fgithub.svg)
+*Generated from url: `https://assets.solidjs.com/banner?project=github&background=tiles&integration=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fsimple-icons%4011%2Ficons%2Fgithub.svg`*
+## Integration graphic combined with a custom color
+![SolidJS x Docker, tinted orange](https://assets.solidjs.com/banner?project=docker&background=tiles&color=F97316&integration=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fsimple-icons%4011%2Ficons%2Fdocker.svg)
+*Generated from url: `https://assets.solidjs.com/banner?project=docker&background=tiles&color=F97316&integration=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fsimple-icons%4011%2Ficons%2Fdocker.svg`*
+## A logo the banner can't fetch is silently ignored
+![Integration fetch failure falls back cleanly](https://assets.solidjs.com/banner?project=broken-integration&background=tiles&integration=https%3A%2F%2Fexample.com%2Fdoes-not-exist.svg)
+*Generated from url: `https://assets.solidjs.com/banner?project=broken-integration&background=tiles&integration=https%3A%2F%2Fexample.com%2Fdoes-not-exist.svg`*
