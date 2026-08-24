@@ -3,7 +3,44 @@ import backgroundTiles from "./assets/banner/backgrounds/tiles.svg?raw";
 import logoContext from "./assets/banner/logos/context.svg?raw";
 import logoDefault from "./assets/banner/logos/default.svg?raw";
 
+import type { Path } from "opentype.js";
+
 import { regular, bold } from "../font";
+
+// opentype.js's Path#toSVG can render a literal "NaN" into the path data.
+// Its internal rounding does `decimalPart + "e+" + places`; when a
+// coordinate's floating-point fractional part is a tiny epsilon (e.g.
+// 473.00000000000006), JS stringifies that epsilon in exponential
+// notation, producing an invalid number string that Math.round can't
+// parse, which corrupts the path and clips whatever glyph comes next.
+// Serialize coordinates ourselves with toFixed to sidestep it.
+function toSafeSVGPath(path: Path): string {
+  let d = "";
+  for (const cmd of path.commands) {
+    switch (cmd.type) {
+      case "M":
+        d += `M${cmd.x.toFixed(2)} ${cmd.y.toFixed(2)}`;
+        break;
+      case "L":
+        d += `L${cmd.x.toFixed(2)} ${cmd.y.toFixed(2)}`;
+        break;
+      case "Q":
+        d += `Q${cmd.x1.toFixed(2)} ${cmd.y1.toFixed(2)} ${cmd.x.toFixed(
+          2
+        )} ${cmd.y.toFixed(2)}`;
+        break;
+      case "C":
+        d += `C${cmd.x1.toFixed(2)} ${cmd.y1.toFixed(2)} ${cmd.x2.toFixed(
+          2
+        )} ${cmd.y2.toFixed(2)} ${cmd.x.toFixed(2)} ${cmd.y.toFixed(2)}`;
+        break;
+      case "Z":
+        d += "Z";
+        break;
+    }
+  }
+  return `<path d="${d}" fill="${path.fill}"/>`;
+}
 
 export async function handleRequest(request: Request): Promise<Response> {
   const searchParams = new URLSearchParams(request.url.split("?")[1]);
@@ -66,13 +103,13 @@ export async function handleRequest(request: Request): Promise<Response> {
       "<svg",
       `<svg width="182.53" height="41.12" x="48.5" y="29.44"`
     );
-    svg += typeText.toSVG(2);
+    svg += toSafeSVGPath(typeText);
   }
 
   svg += `<path d="M${500 - projectWidth - 48},72 h${projectWidth + 48} v28 h-${
     projectWidth + 48
   } q0,-28 28,-28 z" fill="#0E478C" filter="url(#blur)" />`;
-  svg += projectText.toSVG(2);
+  svg += toSafeSVGPath(projectText);
 
   svg += `</g>`;
   svg += `</svg>`;
