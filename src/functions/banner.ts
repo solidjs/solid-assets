@@ -291,9 +291,9 @@ export async function handleRequest(request: Request): Promise<Response> {
   const searchParams = new URLSearchParams(request.url.split("?")[1]);
 
   const type = searchParams.get("type") || "Community";
-  const project = (
-    searchParams.get("project") || "example-package"
-  ).toUpperCase();
+  // An empty (or missing) project name means no tag at all.
+  const project = (searchParams.get("project") || "").trim().toUpperCase();
+  const hasProject = project.length > 0;
 
   const isCore = type.toLowerCase() === "core";
 
@@ -436,8 +436,9 @@ export async function handleRequest(request: Request): Promise<Response> {
   }
 
   // The project name tag competes for the same corner an integration
-  // graphic would occupy visually, so hide it whenever one is shown.
-  if (!renderIntegration) {
+  // graphic would occupy visually, so hide it whenever one is shown, and
+  // there is nothing to put in it without a project name.
+  if (!renderIntegration && hasProject) {
     svg += `<path d="M${500 - projectWidth - 48},72 h${
       projectWidth + 48
     } v28 h-${projectWidth + 48} q0,-28 28,-28 z" fill="#0A4593" />`;

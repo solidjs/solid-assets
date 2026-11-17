@@ -16,7 +16,7 @@ The banner accepts the following query parameters, all optional:
 
 | Parameter     | Values                                | Default             | Description                                                                    |
 | ------------- | -------------------------------------- | -------------------- | -------------------------------------------------------------------------------- |
-| `project`     | any text                               | `example-package`    | The name shown in the tag in the bottom-right corner.                            |
+| `project`     | any text                               | none                 | The name shown in the tag in the bottom-right corner. With no name (or an empty one) the tag is not drawn. |
 | `type`        | `Core`, or any free text               | `Community`          | `Core` shows the plain SolidJS wordmark with no caption. Any other value (e.g. `Ecosystem`) is shown as a caption under the wordmark. |
 | `color`       | a hex color, e.g. `F97316`             | none (Solid Blue)  | Retints the banner to match your project's own branding.                        |
 | `version`     | `2.0` (or `2`)                         | none                  | Adds the yellow "2.0" tag from the Solid 2.0 launch lockup next to the wordmark. |
