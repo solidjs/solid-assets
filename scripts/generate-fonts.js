@@ -2,24 +2,22 @@ const fs = require('fs')
 const opentype = require('opentype.js')
 
 const fonts = [
-  ["Gordita", "Regular"],
-  ["Gordita", "Regular-Italic"],
-  ["Gordita", "Bold"],
-  ["Gordita", "Bold-Italic"],
-  ["Gordita", "Black"],
-  ["Gordita", "Black-Italic"],
-  ["Gordita", "Light"],
-  ["Gordita", "Light-Italic"],
-  ["Gordita", "Medium"],
-  ["Gordita", "Medium-Italic"],
-  ["Gordita", "Thin"],
-  ["Gordita", "Thin-Italic"],
-  ["Gordita", "Ultra"],
-  ["Gordita", "Ultra-Italic"],
+  ["Geist", "Regular"],
+  ["Geist", "Medium"],
+  ["Geist", "SemiBold"],
+  ["Geist", "Bold"],
 ];
 
+// Banner text is short Latin labels, so only Basic Latin, Latin-1 and Latin Extended-A are kept.
+// This keeps each font JSON (bundled into the worker) small.
+function isKept(glyph) {
+  const cps = glyph.unicodes && glyph.unicodes.length ? glyph.unicodes : [glyph.unicode]
+  return glyph.index === 0 || cps.some((c) => c !== undefined && c >= 0x20 && c <= 0x17f)
+}
+
 function generateFont(name, style, file, output) {
-  var font = opentype.loadSync(file)
+  var buf = fs.readFileSync(file)
+  var font = opentype.parse(buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength))
   // Construct a Path object containing the letter shapes of the given text.
   // The other parameters are x, y and fontSize.
   // Note that y is the position of the baseline.
@@ -29,6 +27,7 @@ function generateFont(name, style, file, output) {
 
   for (var i = 0; i < font.glyphs.length; i++) {
     var glyph = font.glyphs.get(i)
+    if (!isKept(glyph)) continue
 
     glyphs[font.glyphNames.glyphIndexToName(i)] = {
       index: i,

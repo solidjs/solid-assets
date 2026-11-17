@@ -1,7 +1,5 @@
-import backgroundBlocks from "./assets/banner/backgrounds/blocks.svg?raw";
-import backgroundTiles from "./assets/banner/backgrounds/tiles.svg?raw";
-import logoContext from "./assets/banner/logos/context.svg?raw";
 import logoDefault from "./assets/banner/logos/default.svg?raw";
+import logoTag2 from "./assets/banner/logos/tag-2.0.svg?raw";
 
 import type { Path } from "opentype.js";
 
@@ -21,17 +19,25 @@ const INTEGRATION_TARGET_HEIGHT = 32;
 const INTEGRATION_MAX_WIDTH = 140;
 const INTEGRATION_MIN_WIDTH = 20;
 const INTEGRATION_SIDE_MARGIN = 24;
+// The Solid 2.0 lockup (icon + wordmark, light-on-dark variant) is 465.12 x 146.28.
 const LOGO_DEFAULT_X = 48.5;
-const LOGO_WIDTH = 182.53;
-const LOGO_HEIGHT = 41.12;
+const LOGO_HEIGHT = 44;
+const LOGO_WIDTH = (LOGO_HEIGHT * 465.12) / 146.28;
+// With `version=2.0` the lockup also carries the yellow "2.0" tag from the launch lockup, which makes it wider
+// (591.98 x 146.28).
+const LOGO_WIDTH_V2 = (LOGO_HEIGHT * 591.98) / 146.28;
+// The wordmark starts 0.363 of the way across the standard lockup; the type caption lines up with it.
+const LOGO_WORDMARK_X = LOGO_WIDTH * 0.363;
+const LOGO_Y = (100 - LOGO_HEIGHT) / 2;
+const LOGO_CAPTION_Y = LOGO_Y - 8;
 const CONNECTOR_GAP = 14;
 const CONNECTOR_SIZE = 20;
 const CONNECTOR_ICON = `<svg viewBox="0 0 20 20"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" fill="#fff"/></svg>`;
 
-// Hue (in degrees) of the banner's brand blue (#0E478C, the project tag's
-// fill). An optional `color` param is retinted by rotating every hue in the
+// Hue (in degrees) of the banner's brand blue (Solid Blue #0A4593, the project
+// tag's fill). An optional `color` param is retinted by rotating every hue in the
 // banner by the difference between this and the requested color's own hue.
-const DEFAULT_HUE_DEGREES = 213;
+const DEFAULT_HUE_DEGREES = 214;
 
 // Parses a hex color (`#rgb`, `#rrggbb`, with or without the `#`) into its
 // hue in degrees, or null if it isn't a recognizable hex color.
@@ -285,12 +291,15 @@ export async function handleRequest(request: Request): Promise<Response> {
   const searchParams = new URLSearchParams(request.url.split("?")[1]);
 
   const type = searchParams.get("type") || "Community";
-  const background = searchParams.get("background") || "blocks";
   const project = (
     searchParams.get("project") || "example-package"
   ).toUpperCase();
 
   const isCore = type.toLowerCase() === "core";
+
+  // Opt-in `version=2.0` (or `2`) adds the yellow "2.0" tag to the logo.
+  const isV2 = /^2(\.0)?$/.test((searchParams.get("version") || "").trim());
+  const logoWidth = isV2 ? LOGO_WIDTH_V2 : LOGO_WIDTH;
 
   const integrationParam = searchParams.get("integration");
   const integrationSvg = integrationParam
@@ -302,8 +311,8 @@ export async function handleRequest(request: Request): Promise<Response> {
   const hueRotateDegrees =
     targetHue !== null ? targetHue - DEFAULT_HUE_DEGREES : null;
 
-  const typeText = regular?.getPath(type, 105, 67, 14, {
-    letterSpacing: 0.05,
+  const typeText = regular?.getPath(type, LOGO_DEFAULT_X + LOGO_WORDMARK_X, LOGO_CAPTION_Y + LOGO_HEIGHT + 11, 14, {
+    letterSpacing: 0.02,
   });
   typeText.fill = "#fff";
 
@@ -319,7 +328,7 @@ export async function handleRequest(request: Request): Promise<Response> {
   // centered in the banner — its total width depends on the fetched asset's
   // own aspect ratio, so the connector and integration logo's x positions
   // can only be pinned down once that width is known.
-  const lockupFixedWidth = LOGO_WIDTH + CONNECTOR_GAP * 2 + CONNECTOR_SIZE;
+  const lockupFixedWidth = logoWidth + CONNECTOR_GAP * 2 + CONNECTOR_SIZE;
   const integrationAvailableWidth =
     500 - INTEGRATION_SIDE_MARGIN * 2 - lockupFixedWidth;
   const renderIntegration =
@@ -341,7 +350,7 @@ export async function handleRequest(request: Request): Promise<Response> {
   const logoX = renderIntegration
     ? (500 - (lockupFixedWidth + integrationWidth)) / 2
     : LOGO_DEFAULT_X;
-  const connectorX = logoX + LOGO_WIDTH + CONNECTOR_GAP;
+  const connectorX = logoX + logoWidth + CONNECTOR_GAP;
   const integrationStartX = connectorX + CONNECTOR_SIZE + CONNECTOR_GAP;
 
   let svg = `<svg width="1000" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 100">`;
@@ -352,10 +361,6 @@ export async function handleRequest(request: Request): Promise<Response> {
   svg += `</mask>`;
 
   svg += `<defs>`;
-  // Add blur effect to box
-  svg += `<filter y="-5" height="52" id="blur" color-interpolation-filters="sRGB">`;
-  svg += `<feDropShadow dx="0" dy="2" stdDeviation="12" flood-color="#148CC0" flood-opacity="0.5"/>`;
-  svg += `</filter>`;
   if (renderIntegration) {
     // Recolor the integration's logo to solid white (preserving alpha) so
     // it merges with the banner regardless of the source's own colors.
@@ -373,6 +378,15 @@ export async function handleRequest(request: Request): Promise<Response> {
     )}"/>`;
     svg += `</filter>`;
   }
+  // The base background is the website hero's gradient: a 160deg linear gradient from Deep Blue through
+  // Solid Blue to a dark navy, with a faint light glow at the top right. The 160deg line is laid out in
+  // user space so it keeps its angle on the wide banner.
+  svg += `<linearGradient id="hero" gradientUnits="userSpaceOnUse" x1="204.7" y1="-74.5" x2="295.3" y2="174.5">`;
+  svg += `<stop offset="0" stop-color="#0265B2"/><stop offset="0.45" stop-color="#0A4593"/><stop offset="1" stop-color="#07305E"/>`;
+  svg += `</linearGradient>`;
+  svg += `<radialGradient id="glow" gradientUnits="userSpaceOnUse" gradientTransform="translate(425 0) scale(270 90)" cx="0" cy="0" r="1">`;
+  svg += `<stop offset="0" stop-color="#fff" stop-opacity="0.14"/><stop offset="0.7" stop-color="#fff" stop-opacity="0"/>`;
+  svg += `</radialGradient>`;
   svg += `</defs>`;
 
   // Apply mask (and the color tint, if requested)
@@ -381,29 +395,24 @@ export async function handleRequest(request: Request): Promise<Response> {
   }>`;
 
   // Append the background
-  switch (background.toLowerCase()) {
-    case "tiles":
-      svg += backgroundTiles;
-      break;
-    default:
-      svg += backgroundBlocks;
-  }
+  svg += `<rect width="500" height="100" fill="url(#hero)"/>`;
+  svg += `<rect width="500" height="100" fill="url(#glow)"/>`;
 
   // Append the logo. An integration graphic replaces the type caption
   // ("Ecosystem"/"Community") with its own connector + logo lockup, so use
-  // the bare wordmark in that case too, same as the core variant.
-  if (isCore || renderIntegration) {
-    svg += logoDefault.replaceAll(
-      "<svg",
-      `<svg width="${LOGO_WIDTH}" height="${LOGO_HEIGHT}" x="${logoX.toFixed(
-        2
-      )}" y="29.44"`
-    );
-  } else {
-    svg += logoContext.replaceAll(
-      "<svg",
-      `<svg width="${LOGO_WIDTH}" height="${LOGO_HEIGHT}" x="${LOGO_DEFAULT_X}" y="29.44"`
-    );
+  // the logo without a caption in that case too, same as the core variant.
+  const showCaption = !(isCore || renderIntegration);
+  const logoDrawX = showCaption ? LOGO_DEFAULT_X : logoX;
+  const logoDrawY = showCaption ? LOGO_CAPTION_Y : LOGO_Y;
+  const logoBox = `width="${logoWidth.toFixed(2)}" height="${LOGO_HEIGHT}" x="${logoDrawX.toFixed(
+    2
+  )}" y="${logoDrawY.toFixed(2)}"`;
+  // The v2 logo reserves room on the right of the wordmark for the tag.
+  svg += (isV2
+    ? logoDefault.replace('viewBox="0 0 465.12 146.28"', 'viewBox="0 0 591.98 146.28"')
+    : logoDefault
+  ).replace("<svg", `<svg ${logoBox}`);
+  if (showCaption) {
     svg += toSafeSVGPath(typeText);
   }
 
@@ -431,11 +440,16 @@ export async function handleRequest(request: Request): Promise<Response> {
   if (!renderIntegration) {
     svg += `<path d="M${500 - projectWidth - 48},72 h${
       projectWidth + 48
-    } v28 h-${projectWidth + 48} q0,-28 28,-28 z" fill="#0E478C" filter="url(#blur)" />`;
+    } v28 h-${projectWidth + 48} q0,-28 28,-28 z" fill="#0A4593" />`;
     svg += toSafeSVGPath(projectText);
   }
 
   svg += `</g>`;
+
+  // The "2.0" tag is drawn outside the tinted group so a `color` retint leaves it yellow.
+  if (isV2) {
+    svg += logoTag2.replace("<svg", `<svg ${logoBox}`);
+  }
   svg += `</svg>`;
 
   // If an integration was requested but couldn't be fetched, cache the

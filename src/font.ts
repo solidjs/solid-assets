@@ -1,17 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import GorditaRegular from "../assets/fonts/gordita/Gordita-Regular.json";
-import GorditaBold from "../assets/fonts/gordita/Gordita-Bold.json";
+import GeistRegular from "../assets/fonts/geist/Geist-Regular.json";
+import GeistBold from "../assets/fonts/geist/Geist-Bold.json";
 
 import { Font, Glyph, Path } from "opentype.js";
 
 const fontRegular = new Font({
-  familyName: GorditaRegular.familyName,
-  styleName: GorditaRegular.styleName,
-  unitsPerEm: GorditaRegular.unitsPerEm,
-  ascender: GorditaRegular.ascender,
-  descender: GorditaRegular.descender,
-  glyphs: Object.keys(GorditaRegular.glyphs).map((key) => {
-    const glyph = (GorditaRegular.glyphs as any)[key] as any;
+  familyName: GeistRegular.familyName,
+  styleName: GeistRegular.styleName,
+  unitsPerEm: GeistRegular.unitsPerEm,
+  ascender: GeistRegular.ascender,
+  descender: GeistRegular.descender,
+  glyphs: Object.keys(GeistRegular.glyphs).map((key) => {
+    const glyph = (GeistRegular.glyphs as any)[key] as any;
 
     const path = new Path();
 
@@ -30,13 +30,13 @@ const fontRegular = new Font({
 fontRegular.kerningPairs = {};
 
 const fontBold = new Font({
-  familyName: GorditaBold.familyName,
-  styleName: GorditaBold.styleName,
-  unitsPerEm: GorditaBold.unitsPerEm,
-  ascender: GorditaBold.ascender,
-  descender: GorditaBold.descender,
-  glyphs: Object.keys(GorditaBold.glyphs).map((key) => {
-    const glyph = (GorditaBold.glyphs as any)[key] as any;
+  familyName: GeistBold.familyName,
+  styleName: GeistBold.styleName,
+  unitsPerEm: GeistBold.unitsPerEm,
+  ascender: GeistBold.ascender,
+  descender: GeistBold.descender,
+  glyphs: Object.keys(GeistBold.glyphs).map((key) => {
+    const glyph = (GeistBold.glyphs as any)[key] as any;
 
     const path = new Path();
 

@@ -3,23 +3,13 @@ import path from "path";
 
 import { assert, describe, it } from "vitest";
 
-import { Font, Path, Glyph, loadSync } from "opentype.js";
+import { Font, Path, Glyph, parse } from "opentype.js";
 
 const fonts = [
-  ["Gordita", "Regular"],
-  ["Gordita", "Regular-Italic"],
-  ["Gordita", "Bold"],
-  ["Gordita", "Bold-Italic"],
-  ["Gordita", "Black"],
-  ["Gordita", "Black-Italic"],
-  ["Gordita", "Light"],
-  ["Gordita", "Light-Italic"],
-  ["Gordita", "Medium"],
-  ["Gordita", "Medium-Italic"],
-  ["Gordita", "Thin"],
-  ["Gordita", "Thin-Italic"],
-  ["Gordita", "Ultra"],
-  ["Gordita", "Ultra-Italic"],
+  ["Geist", "Regular"],
+  ["Geist", "Medium"],
+  ["Geist", "SemiBold"],
+  ["Geist", "Bold"],
 ];
 
 describe("validate-fonts", () => {
@@ -39,7 +29,8 @@ describe("validate-fonts", () => {
       );
 
       let fontData = JSON.parse(fs.readFileSync(fontDataPath).toString());
-      let fontReal = loadSync(fontRealPath, {});
+      const buf = fs.readFileSync(fontRealPath);
+      let fontReal = parse(buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength));
 
       let font = new Font({
         familyName: fontData.familyName,
@@ -79,10 +70,12 @@ describe("validate-fonts", () => {
 
       (font as any).kerningPairs = {};
 
-      assert.equal(
+      // The generated JSON only keeps the Latin glyphs the banner uses, so it is a subset of the TTF.
+      assert.isAbove(font.glyphs.length, 200, `${fonts[i][0]} ${fonts[i][1]} kept too few glyphs`);
+      assert.isAtMost(
         font.glyphs.length,
         fontReal.glyphs.length,
-        `${fonts[i][0]} ${fonts[i][1]} has ${font.glyphs.length} glyphs but expected ${fontReal.glyphs.length}`
+        `${fonts[i][0]} ${fonts[i][1]} has more glyphs than its source font`
       );
 
       let commands = font.getPath("Hello world", 0, 0, 100).commands;
